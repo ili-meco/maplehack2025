@@ -9,12 +9,6 @@ from dotenv import load_dotenv
 # !python.exe -m pip install --upgrade pip
 # !pip install semantic-kernel[azure] streamlit
 
-# Make sure paths are correct for the imports
-notebook_dir = os.path.abspath("")
-parent_dir = os.path.dirname(notebook_dir)
-grandparent_dir = os.path.dirname(parent_dir)
-sys.path.append(grandparent_dir)
-
 
 from semantic_kernel import Kernel
 from semantic_kernel.contents import ChatMessageContent
@@ -136,6 +130,8 @@ async def get_agent_response(user_input):
         name="PerfOpt",
         instructions="Detail techniques to maximize the speed and efficiency of a data or AI pattern. Address aspects such as data ingestion, processing, model inference, query performance, and caching."
     )
+    
+    
 
     azure_pattern_opt_triage_agent = ChatCompletionAgent(
         service=AzureChatCompletion(),
@@ -145,6 +141,8 @@ async def get_agent_response(user_input):
             "Your task is to evaluate user requests for specific Azure data or AI patterns and forward them to the appropriate specialized agents for targeted assistance. "
             "After gathering information from the specialized agents, provide the full, comprehensive answer to the user containing all relevant information."
             "ensure to put ALL the relivant MS documentation and provide links . prioritize Microsoft Build 2025 annoucments "
+
+            
         ),
         plugins=[
             core_comps_agent,
