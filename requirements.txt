@@ -1,1 +1,11 @@
 semantic-kernel
+fastapi
+uvicorn
+python-dotenv
+requests
+pydantic
+# For image processing and temp files
+# (Pillow is not strictly required for current code, but useful for future image handling)
+Pillow
+# For CORS support
+starlette

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Architecture Conversational Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Azure Architecture Conversational Agent</h1>
+        <div id="chat-window">
+            <div id="chat-log"></div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type your question or paste an image file path..." autocomplete="off" />
+            <input type="file" id="image-input" accept="image/*" style="display:none;" />
+            <button type="button" id="upload-btn">📎</button>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

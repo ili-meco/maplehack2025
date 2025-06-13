@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 24px 32px 16px 32px;
+}
+h1 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 24px;
+}
+#chat-window {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fafbfc;
+    height: 350px;
+    overflow-y: auto;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+#chat-log {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.user-msg {
+    align-self: flex-end;
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 10px 16px;
+    border-radius: 16px 16px 0 16px;
+    max-width: 80%;
+    word-break: break-word;
+}
+.agent-msg {
+    align-self: flex-start;
+    background: #f1f8e9;
+    color: #33691e;
+    padding: 10px 16px;
+    border-radius: 16px 16px 16px 0;
+    max-width: 80%;
+    word-break: break-word;
+}
+#chat-form {
+    display: flex;
+    gap: 8px;
+}
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #bdbdbd;
+    font-size: 1rem;
+}
+#upload-btn {
+    background: #e3f2fd;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+#upload-btn:hover {
+    background: #bbdefb;
+}
+button[type="submit"] {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background: #1565c0;
+}
